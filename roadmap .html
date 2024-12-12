@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="bar.css">
+        
+       
+        <title> Carrer Roadmap </title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script> 
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+            
+        * {
+            box-sizing: border-box;
+          }
+          
+          html, body {
+            height: 100%;
+          }
+          
+          main{
+            display: grid;
+            place-items: center;
+          }
+          .by{
+            width: 100%;
+            height:100px;
+          }
+          
+          .page-content {
+            display: grid;
+            grid-gap: 1rem;
+            padding: 1rem;
+            max-width: 1024px;
+            margin: 0 auto;
+            font-family: var(--font-sans);
+          }
+          @media (min-width: 600px) {
+            .page-content {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+          @media (min-width: 800px) {
+            .page-content {
+              grid-template-columns: repeat(4, 1fr);
+            }
+          }
+        
+          .card {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            padding: 4rem;
+            padding-left: 10px;
+            width: 100%;
+            text-align: center;
+            color: whitesmoke;
+            background-color: whitesmoke;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+          }
+          @media (min-width: 600px) {
+            .card {
+              height: 350px;
+            }
+          }
+          .card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110%;
+            background-size: cover;
+            background-position: 0 0;
+            transition: transform calc(var(--d) * 1.5) var(--e);
+            pointer-events: none;
+          }
+          .card:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            pointer-events: none;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+            transform: translateY(-50%);
+            transition: transform calc(var(--d) * 2) var(--e);
+          }
+          .card:nth-child(1):before {
+            background-image: url(assets/img/engineer.avif);
+          }
+          .card:nth-child(2):before {
+            background-image: url(assets/img/WhatsApp\ Image\ 2023-08-25\ at\ 17.26.53.jpg);
+          }
+          .card:nth-child(3):before {
+            background-image: url(assets/img/agrisd.jpg);
+          }
+          .card:nth-child(4):before {
+            background-image: url(assets/img/desins.webp);
+          }
+          .card:nth-child(5):before {
+            background-image: url(assets/img/artsj.webp);
+          }
+          .card:nth-child(6):before {
+            background-image: url(assets/img/businessj.webp);
+          }
+          .card:nth-child(7):before {
+           width: 400px;
+            background-image: url(assets/img/marines.jpeg);
+          }
+          .card:nth-child(8):before {
+            background-image: url(assets/img/airo.jpg);
+          }
+          
+          .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            transition: transform var(--d) var(--e);
+            z-index: 1;
+          }
+          .content > * + * {
+            margin-top: 1rem;
+          }
+          
+          .title {
+            font-size: 1.3rem;
+            color: aliceblue;
+            font-weight: bold;
+            line-height: 1.2;
+          }
+          
+          .copy {
+            font-family: var(--font-serif);
+            font-size: 1.125rem;
+            font-style: italic;
+            line-height: 1.35;
+          }
+          
+          .btn {
+            cursor: pointer;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.65rem;
+            font-weight: bold;
+            letter-spacing: 0.025rem;
+            text-transform: uppercase;
+            color: white;
+            background-color:#b305b3;
+            border: none;
+          }
+          .btn:hover {
+            background-color: #0d0d0d;
+          }
+          .btn:focus {
+            outline: 1px dashed yellow;
+            outline-offset: 3px;
+          }
+          
+          @media (hover: hover) and (min-width: 600px) {
+            .card:after {
+              transform: translateY(0);
+            }
+          
+            .content {
+              transform: translateY(calc(100% - 4.5rem));
+            }
+            .content > *:not(.title) {
+              opacity: 0;
+              transform: translateY(1rem);
+              transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+            }
+          
+            .card:hover,
+          .card:focus-within {
+              align-items: center;
+            }
+            .card:hover:before,
+          .card:focus-within:before {
+              transform: translateY(-4%);
+            }
+            .card:hover:after,
+          .card:focus-within:after {
+              transform: translateY(-50%);
+            }
+            .card:hover .content,
+          .card:focus-within .content {
+              transform: translateY(0);
+            }
+            .card:hover .content > *:not(.title),
+          .card:focus-within .content > *:not(.title) {
+              opacity: 1;
+              transform: translateY(0);
+              transition-delay: calc(var(--d) / 8);
+            }
+          
+            .card:focus-within:before, .card:focus-within:after,
+          .card:focus-within .content,
+          .card:focus-within .content > *:not(.title) {
+              transition-duration: 0s;
+            }
+          }
+          @media (min-width: 768px) {
+
+/* show 4 items */
+.carousel-inner .active,
+.carousel-inner .active + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item,
+.carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+    display: block;
+}
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+/* last visible item + 1 */
+.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* left or forward direction */
+.active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carousel-item-next.carousel-item-left + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+/* farthest right hidden item must be abso position for animations */
+.carousel-inner .carousel-item-next.carousel-item-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+/* right or prev direction */
+.active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carousel-item-prev.carousel-item-right + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    display: block;
+    visibility: visible;
+}
+
+}
+.card{
+  padding: 10% 10% !important;
+}
+          
+        </style> 
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+
+                        
+                        
+                        <li class="nav__item"><a href="#trend" class="nav__link">Trending</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link"> Back to home</a></li>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+             <div class="by">
+
+             </div>
+        <main   class="page-content">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">ENGINEERING</h2>
+                  <p class="copy"> </p>
+                  <button class="btn" onclick="engi()">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">MEDICAL</h2>
+                  <p class="copy"></p>
+                  <button class="btn" onclick="medi()">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">AGRICULTURE</h2>
+                  <p class="copy"></p>
+                  <button class="btn"  onclick="reavial()"">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">DESIGN</h2>
+                  <p class="copy"></p>
+                  <button class="btn"  onclick="redirectToDesignPage()">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">ARTS</h2>
+                  <p class="copy"></p>
+                  <button class="btn"  onclick="arts()">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">BUSSINESS</h2>
+                  <p class="copy"></p>
+                  <button class="btn" onclick="bus()">ENTER</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">MARINE</h2>
+                  <p class="copy"></p>
+                  <button class="btn" onclick="meri()">ENTER</button>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">AEROSPACE</h2>
+                  <p class="copy"></p>
+                  <button class="btn" onclick="aero()">ENTER</button>
+                  
+                </div>
+              </div>
+            </section>
+
+                
+        </main>
+        <section  id="trend" class="carousel">
+          <h2 class="categories__title">Top youtubes to learn</h2>
+          <div class="carousel__container">
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/CODERCO.jpeg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+               <a href="https://www.youtube.com/@TheCoderCoder"><h5 class="carousel-item__details--title">CODER CODER</h5></a> 
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/KEVIN.jpeg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+                <a href="https://www.youtube.com/@KevinPowell"><h5 class="carousel-item__details--title">KEVIN POVEL</h5></a>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/WEBDEV.jpeg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+                <a href="https://www.youtube.com/@WebDevSimplified"><h5 class="carousel-item__details--title">WEB DEV SIMPLIFIED</h5></a>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/DAVE GRAY.jpeg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+                <a href="https://www.youtube.com/@DaveGrayTeachesCode"><h5 class="carousel-item__details--title">DAVE GRAY</h5></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/TUTOR.jpeg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+                <a href="https://www.youtube.com/@tutorjoes"><h5 class="carousel-item__details--title">TUTOR JOES STANLEY</h5></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-item__img"
+                src="assets/img/NET NINJA.jpg"
+                alt="people"
+              />
+              <div class="carousel-item__details">
+                <div class="controls">
+                  <span class="fas fa-play-circle"></span>
+                  <span class="fas fa-plus-circle"></span>
+                </div>
+                <a href="https://www.youtube.com/@NetNinja"><h5 class="carousel-item__details--title">THE NET NNJA</h5></a>
+              </div>
+            </div>
+    
+           
+          </div>
+        </section>
+
+
+  
+  
+
+        <!--========== FOOTER ==========-->
+        <footer  id="helo" class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                      <li><a href="roadmap .html" class="footer__link">Roadmap</a></li>
+                      <li><a href="coursemain.html" class="footer__link">Courses</a></li>
+                      <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+
+
+
+
+
+</script>
+<script>
+  function bus(){
+  window.location.href="business.html"
+
+}
+</script>
+<script>
+  function engi(){
+  window.location.href="engimain.html"
+
+}
+</script>
+<script>
+  function redirectToDesignPage(){
+  window.location.href="deesign.html"
+
+}
+</script>
+<script>
+                
+function reavial() {
+  window.location.href="agrii.html"
+
+}
+</script>
+<script>
+function medi(){
+  window.location.href="med1.html"
+
+}
+</script>
+<script>
+function meri(){
+  window.location.href="marine.html"
+
+}
+</script>
+<script>
+function arts(){
+  window.location.href="arts.html"
+
+}
+</script>
+<script>
+  function aero(){
+    window.location.href="areo.html"
+  
+  }
+  </script>
+    </body>
+</html>

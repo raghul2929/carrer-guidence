@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive landing page</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="roadmap .html" class="nav__link active-link">Back to roadmap</a></li>
+                        <li class="nav__item"><a href="#path" class="nav__link">Path</a></li>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/m1.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h2 class="home__title">List of Marine Course</h1>
+                        <p class="home__description">
+                            This is a very recommended course in terms of employment opportunities. Filipino seafarers are highly considered by international shipping agencies for their competence. It's an in-demand job today. Well for salary it's a bit higher than other job,s not to mention the chance of seeing beautiful places around the world..</p>
+                        <a href="marine1.html" class="button">Get Started</a>
+                    </div>   
+                </div>
+            </section>
+            <!--========== DECORATION ==========-->
+            
+            <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="roadmap.html" class="footer__link">Roadmap</a></li>
+                        <li><a href="coursemain.html" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

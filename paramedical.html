@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive landing page</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <style>
+            table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+               
+               
+                justify-content: center;
+                border-radius: 20px;
+              
+                border-radius: 10px; /* Adjust the border radius as needed */
+                overflow: hidden;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 border-radius: ;
+                 
+              /* This centers the table vertically on the page */
+            }
+           
+            .data {
+                padding-left: 20px;
+                vertical-align: middle;
+              
+                font-weight: strong;
+            }
+            .value {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                width: 20%;
+                height: 4em;
+                border: 1px solid #ccc;
+                
+            }
+
+            /* Add styling to the table */
+            .interactive-table {
+        border-collapse: collapse;
+        width: 65%;
+        margin: 20px auto; 
+        border-radius: 1%;
+        /* Center the table on the page */
+    }
+    .interactive-table{
+        border-radius: 10px; /* Adjust the border-radius value for the desired roundness */
+        overflow: hidden;
+    }
+
+    /* Style the table header (th) */
+    .interactive-table th {
+        background-color: #f2f2f2;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #821d73;
+        border-radius: 10px;
+    }
+
+    /* Style the table cells (td) */
+    .interactive-table td {
+        border: 1px solid #b6a3b3;
+        padding: 8px;
+        text-align: center;
+    }
+    /*listed items*/
+    /* Use dotted list-style */
+.dotted-list {
+    list-style-type: disc; /* You can change 'circle' to 'disc' for filled dots */
+    margin-left: 90px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="med1.html" class="nav__link active-link">Back to medical</a></li>
+                        <li class="nav__item"><a href="#med" class="nav__link">Path</a></li>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+       
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title"> Paramedical Courses after 12th</h2>
+                <div style="text-align: center;" class="medical">
+                    <img src="assets/img/nurse.png" alt="" width="600px">
+                </div ><br>
+                <div id="med"  ></div>
+                <h2 style="padding-bottom:20px ;">Types of Paramedical Courses 2023</h2>
+                 <div style="text-indent:100px"><b></b>Paramedical courses are specialized training programs that focus on a variety of healthcare fields, from emergency medical services to diagnostic imaging and laboratory sciences. Depending on the level of education and training required, there are several types of paramedical courses available.</div>
+                 <br>
+                 <div  class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Level</th>
+                            <th>Duration</th>
+                            <th>Fees</th>
+                        </tr>
+                        <tr>
+                            <td>Diploma Course</td>
+                            <td>1 Year</td>
+                            <td>INR 66,000</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Diploma</td>
+                            <td>2 Years</td>
+                            <td>INR 1,49,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Certificate Program</td>
+                            <td>6 Months</td>
+                            <td>INR 35,000</td>
+                        </tr>
+                        <tr>
+                            <td>Bachelor’s in Paramedical</td>
+                            <td>3 Years</td>
+                            <td>INR 3,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Master’s in Paramedical</td>
+                            <td>2 Years</td>
+                            <td>
+                                INR 5,00,000
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>PhD in Paramedical</td>
+                            <td>3 Years</td>
+                            <td>INR 5,00,000</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course"><h1 style="margin :20px;">What are Paramedical Courses?</h1></div>
+                <div style="text-indent:100px">Paramedical courses refer to educational programs that train individuals to provide medical support services to patients and assist medical professionals in diagnosis, treatment, and therapy. These courses are designed to equip students with the necessary knowledge and skills to work in various healthcare settings, such as hospitals, clinics, and emergency medical services.</div>
+ 
+                <div ><h1 style="margin-top:20px;">List of Paramedical Diploma Courses:</h1></div><br>
+                <ul class="dotted-list">
+                    <li>Diploma in Medical Laboratory Technology - DMLT</li>
+                    <li>Diploma in Operation Theatre Technology - DOTT</li>
+                    <li>Diploma in Hospital Administration - DHA</li>
+                    <li>Diploma in Emergency Medical Technician - EMT</li>
+                    <li>Diploma in Radiation Technology </li>
+                    <li>Diploma in Dialysis Technology</li>
+                    <li>Diploma in Nursing Care Assistant</li>
+                    <li>Diploma in Medical Record Technology</li>
+                    <li>Diploma in Medical Imaging Technology</li>
+                    <li>Diploma in Optometry</li>
+                    <li>Diploma in Clinical Research</li>
+                    <li>Diploma in Dermatology, Venereology, Leprosy</li>
+                    <li>Diploma in Orthopedics</li>
+                    <li>Diploma in Hear Language and Speech</li>
+                    <li>Diploma in Rural Health Care</li>
+                    <li>Diploma in Dental Hygienist</li>
+                </ul>
+                       <div ><h1 style="margin-top:20px;">List of Paramedical Degree Courses:</h1></div><br>
+                    <div style="text-indent:100px">Paramedical courses are specialized healthcare training programs that provide students with the knowledge and skills they need to work in various allied health professions. Undergraduate courses in paramedical fields typically take four years to complete and provide a comprehensive education in a particular area of healthcare..,</div>
+                    <ul class="dotted-list">
+                        <li>Bachelors in Operating Theatre Technology - BOTT</li>
+                        <li>Bachelor in Radiation Imaging Technology</li>
+                        <li>Bachelor in Nursing</li>
+                        <li>Bachelors in Physiotherapy</li>
+                        <li>BSc in Dialysis Therapy</li>
+                        <li>BSc in Optometry</li>
+                        <li>BSc in Respiratory Therapy Technology</li>
+                        <li>B Voc in MLT</li>
+                        <li>B Voc in Hospital Administration</li>
+                        <li>B Voc in OT Technician</li>
+                        <li>BSc Physician Assistant</li>
+                        <li>BSc Nuclear Medicine Technology</li>
+                        <li>BSc (Audiology and Speech Therapy)</li>
+                        <li>BSc in Cardiac Technology</li>
+                        <li>BSc Neurophysiology Technology</li>
+                        <li>Bachelor of Naturopathy & Yogic Science</li>
+                        <li class="unlisted-item">Your unlisted item here</li>
+                    </ul>
+                    <div ><h1 style="margin-top:20px;">List of Paramedical Postgraduate Courses</h1></div><br>
+                    <div style="text-indent:100px">Paramedical courses are specialized healthcare training programs that provide students with the knowledge and skills they need to work in various allied health professions. Postgraduate courses in paramedical fields are designed for individuals who have already completed a bachelor's or master's degree in a healthcare field and want to specialize further..,</div>
+                    <ul>
+                    <li>Bachelors in Operating Theatre Technology - BOTT</li>
+        <li>Bachelor in Radiation Imaging Technology</li>
+        <li>Bachelor in Nursing</li>
+        <li>Bachelors in Physiotherapy</li>
+        <li>BSc in Dialysis Therapy</li>
+        <li>BSc in Optometry</li>
+        <li>BSc in Respiratory Therapy Technology</li>
+        <li>B Voc in MLT</li>
+        <li>B Voc in Hospital Administration</li>
+        <li>B Voc in OT Technician</li>
+        <li>BSc Physician Assistant</li>
+        <li>BSc Nuclear Medicine Technology</li>
+        <li>BSc (Audiology and Speech Therapy)</li>
+        <li>BSc in Cardiac Technology</li>
+        <li>BSc Neurophysiology Technology</li>
+        <li>Bachelor of Naturopathy & Yogic Science</li>
+        </ul>
+                    
+            </section> 
+                       <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Roadmap</a></li>
+                        <li><a href="#" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

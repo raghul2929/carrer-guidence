@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>engineering</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <style>
+            table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+               
+               
+                justify-content: center;
+                border-radius: 20px;
+              
+                border-radius: 10px; /* Adjust the border radius as needed */
+                overflow: hidden;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 border-radius: ;
+                 
+              /* This centers the table vertically on the page */
+            }
+           
+            .data {
+                padding-left: 20px;
+                vertical-align: middle;
+              
+                font-weight: strong;
+            }
+            .value {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                width: 20%;
+                height: 4em;
+                border: 1px solid #ccc;
+                
+            }
+
+            /* Add styling to the table */
+            .interactive-table {
+        border-collapse: collapse;
+        width: 65%;
+        margin: 20px auto; 
+        border-radius: 1%;
+        bo/* Center the table on the page */
+    }
+    .interactive-table{
+        border-radius: 10px; /* Adjust the border-radius value for the desired roundness */
+        overflow: hidden;
+    }
+
+    /* Style the table header (th) */
+    .interactive-table th {
+        ]
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #8b898b;
+        border-radius: 10px;
+    }
+
+    /* Style the table cells (td) */
+    .interactive-table td {
+        border: 1px solid #b6a3b3;
+        padding: 8px;
+        text-align: center;
+    }
+    /*listed items*/
+    /* Use dotted list-style */
+.dotted-list {
+    list-style-type: disc; /* You can change 'circle' to 'disc' for filled dots */
+    margin-left: 90px;
+  
+}
+.head{
+    margin-bottom: 15px;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="engimain.html" class="nav__link active-link">Back to engineering</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Path</a></li>
+  
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+       
+            <!--========== DECOR    ATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title"> Engineering Courses after 12th</h2>
+                <div style="text-align: center;" class="medical">
+                    <img src="assets/img/enggr.png" alt="" width="600px" >
+                    
+                </div> <section class="decoration section bd-container" id="decoration">
+                    <h2 class="section-title"> undergraduate courses<br> For Your Carrer</h2>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/computer.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Computer Science</h3>
+                            <a href="#a" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/informat.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Information Technology</h3>
+                            <a href="#b" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/ai.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Artificial Intelligence and Data Science Engineering</h3>
+                            <a href="#c" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/business.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title"> Computer Science and Business System Engineering</h3>
+                            <a href="#d" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/electron.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Electronics and Communication Engineering</h3>
+                            <a href="#e" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/eee.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Electrical and Electronics Engineering</h3>
+                            <a href="#f" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/civill.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Civil Engineering </h3>
+                            <a href="#g" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/chemi.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Chemical Engineering                        </h3>
+                            <a href="#h" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/mechanic.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Mechanical Engineering</h3>
+                            <a href="#i" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/elecrr.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Electronics Engineering</h3>
+                            <a href="#j" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/calls.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Electronics and Telecommunication Engineering</h3>
+                            <a href="#k" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/fireess.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Petroleum Engineering</h3>
+                            <a href="#l" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/motor.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">MotorSport Engineering</h3>
+                            <a href="#m" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/carr.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Automobile Engineering                        </h3>
+                            <a href="#n" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/hghg.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Mining Engineering</h3>
+                            <a href="#o" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/haa.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Bio-Medical Engineering</h3>
+                            <a href="#p" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/asset1.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Production Engineering</h3>
+                            <a href="#q" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/asset2.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Bio-Technology Engineering                      </h3>
+                            <a href="#r" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/assets3.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Textile Engineering</h3>
+                            <a href="#s" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/marineg.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Marine Engineering</h3>
+                            <a href="#t" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/ppp.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Petrochemical Engineering</h3>
+                            <a href="#u" class="button button-link">Explore</a>
+                        </div>
+    
+                    </div>
+                </section>
+    
+             <div ><h1 style="margin-top:20px;">List of Engineering Courses:</h1></div><br>
+               
+                <h2 style="padding-top:10px ;padding-bottom:10px;">Computer Science Engineering</h2>
+                 <div style="text-indent:100px" id="a"><b></b>A Bachelor of Engineering (B.E.) in Computer Science is an undergraduate degree program that provides a comprehensive education in computer science and technology. Students in this program study programming, algorithms, software engineering, computer architecture, and various other aspects of computer science. This degree prepares graduates for careers in software development, IT consulting, data analysis, cybersecurity, and related fields, as well as offering a strong foundation for further studies in computer science at the graduate level if desired.</div>
+                 <br>
+                 <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Computer Science Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E,M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years,
+                                M.E -2 Years
+                            </td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs.5  Lakh to Rs. 10 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 6 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Software developer, CSE Engineer, Web developer, Hardware Engineer</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>TCS,Wipro,Infosys,Cognicant,Microsoft,Tech Mahindra,Facebook,Adobe,Twitter,HCL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div id="b" class="course"><h1 style="margin :20px;">Information Technology</h1></div>
+                <div style="text-indent:100px">A Bachelor of Technology (B.Tech) in Information Technology is an undergraduate academic program that provides students with a comprehensive understanding of technology systems, computer networks, software development, and IT management. It focuses on the practical application of technology to solve real-world problems. This degree equips graduates with the knowledge and skills to design, implement, and manage IT solutions, including computer systems, software applications, and network infrastructures, in various industries and organizations.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Information Technology</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech- Four years,
+                                 M.Tech - Two years</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+                                ,M.Tech Two Years
+                            </td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                               Merit Based/entrance exam</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs.5  Lakh to Rs. 10 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 5 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Information Technology Consultant, Project Manager, Software Engineer, System Analyst,Software Developer..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>TCS,Wipro,Google,Infosys,Microsoft,Tech Mahindra,Facebook,Adobe,Twitter,HCL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="c"><h1 style="margin :20px;">Artificial Intelligence and Data Science</h1></div>
+                <div style="text-indent:100px"><b>Artificial Intelligence</b>, often abbreviated as AI, refers to the development of computer systems and software that can perform tasks that typically require human intelligence. These tasks include understanding natural language, recognizing patterns, solving problems, learning from experience, and making decisions.</div><br>
+                <div style="text-indent:100px"><b>Data Science</b> is an interdisciplinary field that involves the collection, analysis, interpretation, and presentation of data to extract valuable insights, support decision-making, and solve complex problems. Data scientists use a combination of skills in statistics, programming, data engineering, and domain knowledge to work with large and diverse datasets.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>AI and Data Science</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                               Merit Based/entrance exam</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs.6  Lakh to Rs. 14 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 6 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Software Developer, Deep Learning Engineer, Computer Vision Engineer,Data Analyst,Quantitaive Analyst Data,Data Scientist.</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>TCS,Twitter,Wipro,Infosys,Microsoft,Tech Mahindra,Facebook,Adobe,Twitter,HCL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div id="d" class="course"><h1 style="margin :20px;">Computer Science and Business System Engineering (TCS)</h1></div>
+                <div style="text-indent:100px">Computer Science and Business System Engineering (TCS) is a dynamic field that seamlessly blends the power of computer science with the intricacies of business systems. In this interdisciplinary realm, students delve into the core principles of computer science, honing their skills in programming, data management, and software development. Simultaneously, they gain a deep understanding of business processes, including operations, supply chains, and quality control. TCS professionals are uniquely positioned to bridge the technological divide in the business world. They analyze complex business challenges and craft innovative solutions that leverage cutting-edge technologies. This skill set encompasses database management, project management, and a keen ability to align IT strategies with overarching business objectives. As the digital landscape continues to evolve, TCS experts are indispensable, driving efficiency and competitiveness in a wide range of industries..</div><br>
+                
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>CSBS</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                               Merit Based/entrance exam</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs.5  Lakh to Rs. 10 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 6 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Software Developer,Database Administrator,Computer Network Architect,Computer Hardware Engineer,Computer Systems Analyst</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>TCS,Wipro,Infosys,Microsoft,Tech Mahindra,Facebook,Adobe,Twitter,HCL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div id="e" class="course"><h1 style="margin :20px;">Electronics and Communication Engineering</h1></div>
+                <div style="text-indent:100px">Electronics and Communication Engineering (ECE) is a specialized field of engineering that deals with the design, development, and maintenance of electronic circuits, communication systems, and related technologies. It focuses on the study of electronic components, devices, and their applications in various communication systems such as telecommunication, radio, television, and computer networks. ECE engineers work on creating and optimizing electronic devices and systems for transmitting, receiving, and processing information, enabling the seamless exchange of data and communication in our modern world.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Electronics and Communication Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E,M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E - Four years
+
+                                M.E - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 2 Lakh to Rs. 7 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>3,00,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Electronics Engineer, Electronics and Communication Engineer, Electronics Design & Development Engineer, Desktop Support Engineer, System Control Engineer</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Bharat Electronics Limited (BEL), Bharat Heavy Electricals Limited (BHEL), Hindustan Petroleum Corporation  Limited (HPCL)</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="f"><h1 style="margin :20px;">Electrical and Electronics Engineering</h1></div>
+                <div style="text-indent:100px">Electrical and Electronics Engineering (EEE) is a branch of engineering that deals with the study, design, application, and maintenance of electrical systems, electronic devices, and technologies. EEE encompasses a wide range of areas, including electrical power generation and distribution, electrical circuits, control systems, telecommunications, electronics, and digital and analog systems. EEE engineers work on developing and improving systems that generate, transmit, and use electrical power, as well as electronic devices and systems that process information, control machines, and enable modern technologies like computers, smartphones, and automation systems.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Electrical and Electronics Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E,M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E - Four years
+
+                                M.E - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Either Merit-based or Entrance-Based (Depending on the institute)</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>INR 3.5-9 LPA</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 55,000-7,00,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Electronics Engineer, Aerospace engineer, Research Engineer, Broadcast engineer, Graduate Engineer Trainee, CAD technician, Electrical engineer, Control and instrumentation engineer, Design engineer, </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Wipro Lighting Corporate,Tata Electric Companies, Adani Power Ltd, PTC India Ltd., Finolex Cables Limited, Bajaj Electricals Ltd, Bharat Heavy Electrical Ltd, Schneider Electric, EMCO limited, Havel’s India Limited, Eveready Industries India Ltd, Jindal Steel & Power Ltd., ISRO, JTO, NTPC, Exide Industries Ltd, Jindal Steel & Power Ltd.</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="g"><h1 style="margin :20px;">Civil Engineering</h1></div>
+                <div style="text-indent:100px">Civil engineering is a branch of engineering that focuses on the design, construction, and maintenance of infrastructure and facilities essential for modern society. This field encompasses a wide range of projects, including buildings, bridges, roads, tunnels, dams, airports, water supply and sewage systems, and more. Civil engineers are responsible for ensuring that these structures are safe, functional, sustainable, and environmentally sound. They work on various aspects of a project, from planning and design to construction and maintenance, with a primary goal of improving and enhancing the infrastructure that supports communities and economies.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Civil Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E, M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E - Four years
+
+                                M.E - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Mains, TS EAMCET, WBJEE, MHT CET</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>INR 3 - 8 Lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 3 - 7 Lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>	Construction Engineer,Geotechnical Engineer,Structural Engineer,  Site Engineer, Professor</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>	Larsen and Toubro, Schlumberger, Power Grid Corporation of India Ltd, Indian Railways,Public Works Department</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="course"id="g"><h1 style="margin :20px;">Chemical Engineering</h1></div>
+                <div style="text-indent:100px">Chemical engineering is a branch of engineering that applies the principles of chemistry, physics, mathematics, and biology to design, develop, and optimize processes and systems for the production, transformation, and utilization of chemicals, materials, energy, and related products. Chemical engineers work on a wide range of projects, including the design and operation of chemical plants, the development of new materials and processes, and the improvement of existing industrial processes to maximize efficiency, safety, and sustainability. They play a crucial role in various industries, such as pharmaceuticals, petrochemicals, food processing, energy production, and environmental management.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Chemical Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E - Four years
+
+                                M.E - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Merit list, marks of entrance examination held by different universities.</td>
+                           
+                        </tr>
+                       
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Up to INR 3,50,000 Lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 50,000 to 9 Lacs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Chemical Engineer, Site Engineer, Fire & Safety Officer, Technical Operator</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Bharat Petroleum, Essar group, Hindalco industries Hindustan Copper Limited, Chanderiya Smelter Complex, etc.</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="h"><h1 style="margin :20px;">Mechanical Engineering</h1></div>
+                <div style="text-indent:100px">Mechanical engineering is a branch of engineering that focuses on the design, analysis, development, and maintenance of mechanical systems and components. It encompasses a wide range of disciplines, including mechanics, thermodynamics, materials science, and manufacturing processes. Mechanical engineers are responsible for conceiving, designing, and bringing to life various mechanical devices and systems, such as engines, machines, HVAC systems, vehicles, and consumer products. Their work involves optimizing the performance, safety, and efficiency of mechanical systems while considering factors like cost, environmental impact, and sustainability. Mechanical engineering plays a crucial role in shaping the technological innovations that drive industries and improve everyday life.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Mechanical Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.E,M.E</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E - Four years
+
+                                M.E - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                      
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 2.5 Lakh to Rs. 6 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>3,00,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Nano- electro mechanical systems, green manufacturing, Biomedical Engineering, High- Speed machining and various other research areas..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>BMW,Hindustan Petroleum Corporation Limited 
+                                ,Tata Motors,Toshiba,GE Global Research,Larsen and Toubro Ltd
+                                ,Mahindra & Mahindra Ltd
+                                ,Maruti Suzuki
+                                ,Reliance Industries
+                                ,Siemens</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="course" id="j"><h1 style="margin :20px;">Electronics Engineering</h1></div>
+                <div style="text-indent:100px">A Bachelor of Technology (B.Tech) in Information Technology is an undergraduate academic program that provides students with a comprehensive understanding of technology systems, computer networks, software development, and IT management. It focuses on the practical application of technology to solve real-world problems. This degree equips graduates with the knowledge and skills to design, implement, and manage IT solutions, including computer systems, software applications, and network infrastructures, in various industries and organizations.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Electronics Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>	INR 1 lakh to INR 10 lakh per annum</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>4- 7 LPA</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Electronics Engineer, Instrumentation Manager, Network Planning Manager, Communication System Operator, Technical Head..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>nfosys, Intel, Siemens, BEL, DRDO, Antrix, Nokia, BEL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="k"><h1 style="margin :20px;">Electronics and Telecommunication Engineering(E&T)</h1></div>
+                <div style="text-indent:100px">Electronics and Telecommunication Engineering is a specialized branch of engineering that focuses on the design, development, and maintenance of electronic and telecommunication systems and devices. This field combines principles from electronics engineering and telecommunications engineering to create systems for transmitting, receiving, and processing information, including voice, data, and multimedia. E&T engineers work on a wide range of technologies, including mobile communication, satellite systems, optical communication, embedded systems, and more. They are responsible for ensuring the efficient and reliable exchange of information across various communication networks, such as the internet, wireless networks, and wired infrastructure. This field plays a pivotal role in connecting people and devices in the modern digital age.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Electronics and Telecommunication Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, NITs, IIITs, CFTI</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 4 Lakh to Rs. 8 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>4,50,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Electronics & Telecommunication Engineer,Telecom Engineer,Network Planning Engineer,Electronics and Communications Consultant</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Bharat Sanchar Nigam Ltd.
+                                ,Bharti Airtel Ltd
+                                ,Capgemini
+                                ,Ericsson India
+                                ,HCL Technologies
+                                ,Infosys Technologies Ltd
+                                ,ITC Infotech
+                                ,Patni Computers</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course"id="l"><h1 style="margin :20px;">Petroleum Engineering</h1></div>
+                <div style="text-indent:100px">Petroleum engineering is a specialized field of engineering dedicated to the exploration, extraction, and production of hydrocarbon resources like crude oil and natural gas. Petroleum engineers are at the forefront of the energy industry, tasked with the challenging responsibility of optimizing the recovery of these valuable resources while minimizing environmental impact and ensuring the safety of operations. They employ a combination of technical knowledge, cutting-edge technologies, and innovation to analyze underground reservoirs, design drilling operations, and oversee production processes. Beyond resource extraction, petroleum engineers also play a vital role in developing sustainable practices and exploring enhanced recovery techniques to extend the life of reservoirs.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Petroleum Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>INR 5-10 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 6 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Completions Engineer, Production Engineers, Reservoir Engineers, Drilling Engineers..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Bharat Petroleum, Aban Offshore, Aquarius International, Cairn India, Essar Oil Limited, IOCL, GAIL, IGL..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="m"><h1 style="margin :20px;">MotorSport Engineering</h1></div>
+                <div style="text-indent:100px">Motorsport engineering is a captivating blend of cutting-edge technology, mechanical prowess, and high-speed adrenaline. It revolves around the art and science of crafting race cars that push the limits of performance on the track. Engineers in this field are tasked with the daunting challenge of designing vehicles that are not only incredibly fast but also safe, reliable, and finely tuned to respond to the slightest driver input. From optimizing aerodynamics to enhancing powertrains, every aspect of a race car's design is meticulously scrutinized. Motorsport engineers are at the forefront of innovation, constantly seeking new ways to shave off fractions of a second, fine-tune handling, and ensure driver safety in the most demanding racing environments. </div>
+                <div class="course"><h1 style="margin :20px;">Colleges offering Motorsports Engineering Courses in India:</h1></div>
+                <div style="text-indent:100px">For those students who want to pursue it as a profession, the course has been designed after consulting with the leading motorsport companies and fits into the industry's requirements for graduate-level engineers. Being a new branch in India, only two institutes offer B.Tech in motorsport engineering which are listed below:</div>
+            </div><br>
+            <ol>
+                <li style="margin-bottom:10px">Cornerstone International College, Chennai, Tamil Nadu</li>
+                <li>Hindustan Institute of Technology and Science, Chennai, Tamil Nadu, etc.</li>
+            </ol>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>MotorSport Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                       
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>5-10 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>3 to 5 lakhs</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Product Development Engineer,
+                                ,Calibration Engineer
+                                ,Research and Development Engineer
+                                ,Design Engineer
+                                ,Crash Analyst
+                                ,Safety Inspector</td>
+                           
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="n"><h1 style="margin :20px;">Automobile Engineering</h1></div>
+                <div style="text-indent:100px">Automobile engineering, a captivating fusion of innovation and mechanical finesse, drives the wheels of modern transportation. At its core, it's the art and science of crafting vehicles that marry design elegance with functionality and safety. This multifaceted field involves designing vehicles from scratch, optimizing powertrains for efficiency and performance, and enhancing the dynamics of how they move and handle. As the automotive industry evolves, automobile engineers are at the forefront of developments in electronic control systems, materials science, and sustainable technologies.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Automobile Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Up to INR 5 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>Up to INR 8 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Automobile Engineer, Automobile Designer, Executive Engineer, Automotive Engineer, Vehicle/Car Designer..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Tesla, Maruti Suzuki, Ford, Toyota, McLaren, Bajaj MotoCorp, Mahindra and Mahindra..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="o"><h1 style="margin :20px;">Mining Engineering</h1></div>
+                <div style="text-indent:100px">Mining Engineering is a specialized field of engineering dedicated to the extraction of valuable minerals and resources from the Earth's crust. This multidisciplinary discipline encompasses a wide range of tasks, from prospecting and exploration to designing and operating mines. Mining engineers play a pivotal role in ensuring the efficient and sustainable extraction of minerals, metals, coal, and other resources, while also prioritizing safety and environmental responsibility. They design underground and open-pit mines, implement cutting-edge technologies for drilling and blasting, and develop methods to transport and process raw materials. Sustainability is a growing concern..,</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Mining Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 3 Lakh to Rs. 8 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>5,00,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Mining Engineer,Lecturer,Mining Safety Engineer,Operations Manager,Design Engineer</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>The Indian Bureau of Mines,
+                                ,Adani Mining Private Limited
+                                ,Essel Mining and Industries Limited
+                                ,IPCL
+                                ,Neyvelli Lignite Corporation
+                                ,Geological Survey of India
+                                ,Coal India
+                               . ONGC
+                                ,TISCO
+                                ,TELCO
+                                ,NALCO
+                                ,Reliance
+                                ,HCL</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="p"><h1 style="margin :20px;">Bio-Medical Engineering</h1></div>
+                <div style="text-indent:100px">Biomedical Engineering, a fascinating amalgamation of engineering and life sciences, represents the vanguard of modern healthcare. This interdisciplinary field is driven by a singular mission: to enhance human health and well-being through innovative technologies and solutions. Biomedical engineers tackle a wide spectrum of challenges, from crafting artificial organs and medical devices to developing cutting-edge diagnostic tools and drug delivery systems. They work at the intersection of biology, medicine, and engineering, translating biological principles into practical solutions that directly impact patient care. This includes designing and improving prosthetic limbs, creating biomaterials for tissue regeneration, and developing advanced imaging techniques to aid in disease diagnosis. Biomedical engineering is not only about innovation but also about compassion, as it strives to improve the lives of individuals facing health challenges, making it an extraordinary field where science, technology, and humanity converge for the betterment of society.
+                </div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Bio-Medical Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>INR 2-5 LPA</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 3-5 LPA</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Bio-medical Engineer, Instrument Engineer, Installation Engineer, Researcher, Maintenance Engineer and more..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Siemens Healthcare, Johnson & Johnson, GE Healthcare, Medtronic, Dräger..,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course"id="q"><h1 style="margin :20px;">Production Engineering</h1></div>
+                <div style="text-indent:100px">Production Engineering, often described as the engine that drives modern manufacturing, is a field where innovation and efficiency converge to transform raw materials into the products that fill our lives. At its heart, it's about orchestrating the intricate dance of machines, materials, and methods to craft goods with precision and quality. Production engineers are the architects of manufacturing processes, meticulously designing systems that balance cost-effectiveness with excellence. They are the champions of quality control, ensuring that each item leaving the production line meets rigorous standards. From supply chain optimization to the deployment of cutting-edge automation technologies, their work extends beyond the factory floor, influencing the sustainability and competitiveness of industries worldwide.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Production Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Up to INR 10 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 4 to 8 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>	
+                                Production Engineer, Operation Analysts, Cost Estimators, Logisticians, Management Trainee, Quality Engineers</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>NTPC, Ashok Leyland, IOCL, NTPC, Aditya Birla, Larsen & Toubro, Godrej, L&T</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course"id="r"><h1 style="margin :20px;">Bio-Technology Engineering</h1></div>
+                <div style="text-indent:100px">Biotechnology Engineering, a captivating synthesis of biology and engineering, stands at the forefront of scientific innovation and discovery. It is a multidisciplinary field that harnesses the power of living organisms, cells, and biological molecules to design and develop groundbreaking solutions for diverse applications. These applications encompass healthcare, agriculture, environmental conservation, and more. Biotechnology engineers are the architects of biopharmaceuticals, genetically modified organisms, and advanced medical diagnostics. They manipulate genetic material, engineer proteins, and optimize fermentation processes to yield life-saving drugs, sustainable agriculture, and renewable energy sources.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Bio-Technology Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 15,000-11, 00,000 based on the level and college</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>Around Rs. 3 - 10 lakhs </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Research Associate, Project Associate, Lab Technician, Scientist Process Engineer, Biotechnologist, Biotechnology Engineer</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>AstraZeneca, 
+
+                                ,Aurigene Discovery Technologies Limited
+                                
+                                ,Aventis Pharmaceuticals.
+                                
+                                ,Avesthagen Technologies Pvt Ltd
+                                
+                                ,Bharath Biotechnology
+                                
+                                ,Orchid Chemicals and Pharmaceuticals Ltd.</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="s"><h1 style="margin :20px;">Textile Engineering</h1></div>
+                <div style="text-indent:100px">Textile Engineering, at its essence, is the art and science of crafting fabrics and textiles. It's a specialized branch of engineering that blends creativity with technical expertise to design, produce, and improve the materials that make up our clothing, furnishings, and various industrial applications. Textile engineers are the architects of the fabrics we wear, considering aspects like fiber selection, yarn production, fabric construction, dyeing, and finishing. They delve into the intricacies of weaving, knitting, and nonwoven technologies to create textiles that are not only aesthetically pleasing but also functional and durable.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Textile Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, MHT CET, TANCET</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>INR 4-8 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>INR 6 lakh</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Medical Textile Engineer, Production Engineer, Operation Trainee, Management Trainee, Process Improvement Trainee, Quality Control Supervisor..,</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Bombay Dyeing, Mysore Silk, JCT Mills, Rajasthan Petro Synthetics</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="t"><h1 style="margin :20px;">Marine Engineering</h1></div>
+                <div style="text-indent:100px">Marine Engineering is a specialized branch of engineering that focuses on the design, construction, operation, and maintenance of various marine vessels and structures. It encompasses a wide range of activities related to ships, submarines, offshore platforms, and other maritime equipment. Marine engineers play a crucial role in ensuring the safe and efficient functioning of these vessels and structures by applying engineering principles to address the unique challenges posed by the marine environment. This includes designing ship propulsion systems, navigation equipment, and onboard systems, as well as ensuring compliance with international maritime regulations. Marine engineering also extends to areas like naval architecture, marine power generation, and offshore oil and gas exploration, contributing significantly to the maritime industry's technological advancements and sustainability efforts.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Marine Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, VITEEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 4 Lakh to Rs. 14 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>8,50,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Marine Engineer,Port Manager,Ship Manager,Maintenance Engineer,Navy Personnel</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>Indian Navy
+
+                                ,Bharati Shipyard
+                                
+                                ,Indian Coast Guard
+                                
+                                ,ABG Shipyard
+                                
+                               , Sea Ports
+                                
+                                ,Orinoco Marine Consultancy
+                                
+                                ,Mobil Shipping Co.,</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="course" id="u"><h1 style="margin :20px;">Petrochemical Engineering</h1></div>
+                <div style="text-indent:100px">Petrochemical Engineering is a specialized field of engineering that focuses on the design, development, and optimization of processes for the production of petrochemicals and chemical products derived from petroleum and natural gas. It plays a pivotal role in the petrochemical industry, which encompasses the production of a vast array of essential products, including plastics, synthetic fibers, pharmaceuticals, and various chemical compounds. Petrochemical engineers are responsible for developing efficient methods to extract, refine, and convert crude oil and natural gas into valuable chemical products.</div><br>
+                <div class="table-container">
+                    <table class="interactive-table">
+                        <tr>
+                            <th>Detailed</th>
+                            <th>Values</th>
+                        </tr>
+                        <tr>
+                            <td>Branch Name</td>
+                            <td>Petrochemical Engineering</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Degree</td>
+                            <td>B.Tech, M.Tech</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>B.E/B.Tech - Four years
+
+                                M.Tech - Two years</td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Admission Process</td>
+                            <td>	
+                                Entrance exam and counselling process</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Entrance Exam</td>
+                            <td>JEE Main, JEE Advanced, UPSEE, BITSAT, GATE</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Course Fees</td>
+                            <td>Rs. 2.5 Lakh to Rs. 8 Lakh for the entire course</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Average Salary</td>
+                            <td>3,50,000</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Career Options</td>
+                            <td>Petroleum Technician,Geoscientist,Chemical Engineer,Civil Engineer,Operations Manager</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Top Recruiting  Companies</td>
+                            <td>
+                                
+                                Oil and Natural Gas Corporation Limited (ONGC)
+                                
+                                ,Derrick Petroleum
+                                
+                                ,GAIL
+                                ,TEssar Oil
+
+                                ,Halliburton
+                                ,Hindustan Petroleum Corporation Limited (HPCL)
+                                
+                                ,Bharat Petroleum Corporation Limited (BPCL)
+                                
+                                ,Shell Technology
+                                
+                                ,Indian Oil Corporation Limited (IOCL)
+                                
+                                ,Chennai Petroleum Corporation Limited (CPCL)
+                                </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+               
+                
+                
+               
+                
+                
+            </section> 
+                       <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Roadmap</a></li>
+                        <li><a href="#" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

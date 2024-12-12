@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive landing page</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <style>
+            table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+                border: px solid rgb(224, 35, 35);
+                width: 70%;
+                justify-content: center;
+                border-radius: 20px;
+              
+             border-radius: 10px; /* Adjust the border radius as needed */
+                overflow: hidden;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 border-radius: ;
+              /* This centers the table vertically on the page */
+            }
+           
+            .data {
+                padding-left: 20px;
+                vertical-align: middle;
+              
+               font-weight: strong;
+            }
+            .value {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                width: 50%;
+                height: 4em;
+                border: 1px solid #ccc;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="marine.html" class="nav__link active-link">Back to marine</a></li>
+                        <li class="nav__item"><a href="#path" class="nav__link">Path</a></li>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+       
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title"> Marine Courses after 12th in India</h2>
+                <div  style="text-align: center;" class="marine">
+                    <img src="assets/img/m1.png" alt="" width="600px">
+                </div>
+                 <div  id="path"style="text-indent:100px"><b>Top Marine Courses After 12th:</b> Marine Engineering course is a branch of engineering that deals with the construction as well as the operation of mechanical equipment of seagoing craft, docks, and harbor installations. The basic job of a Marine engineer is to design, build and maintain vehicles/structures used on or around water. </div>
+                 <br>
+                 <section  id="path"class="decoration section bd-container" id="decoration">
+                    <h2 class="section-title"> undergraduate courses<br> For Your Carrer</h2>
+                  
+                    
+                    <div class="decoration__container bd-grid">
+                        
+                        <div class="decoration__data">
+                            <img src="assets/img/m2.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title"> Marine Engineering</h3>
+                            <a href="#a" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                    <img src="assets/img/m3.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Naval Architecture and Ocean Engineering</h3>
+                            <a href="#b" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/m4.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title"> Ship Building and Repair</h3>
+                            <a href="#c" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/m5.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title"> Marine Biology</h3>
+                            <a href="#d" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                 <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/m6.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Oceanography
+                            </h3>
+                            <a href="#e" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/m7.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Electro Technical Officer</h3>
+                            <a href="#f" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/m8.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Shipping and Port Management</h3>
+                            <a href="#g" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                   
+                </section>
+    
+                 
+          
+                <div ><h1 style="margin-top:20px;">Why Marine course ?</h1></div><br>
+                <div style="text-indent:100px">This is a very recommended course in terms of employment opportunities. Filipino seafarers are highly considered by international shipping agencies for their competence. It's an in-demand job today. Well for salary it's a bit higher than other job,s not to mention the chance of seeing beautiful places around the world.</div>
+                    <div ><h1 style="margin-top:20px;">Top Marine Degree Courses</h1></div><br>
+                   
+                       <div  id="path"><h1 style="margin-top:20px;">B.Tech. in Marine Engineering</h1></div><br>
+                    <div id="a" style="text-indent:100px">   Bachelor Degree in Marine Engineering is a 4 year long, full-time, regular course for preparing expert engineers with experience in working in critical technical grounds such as shipyards, repairing yards, dockyards, vessels, marine vehicles, nautical instruments, and mechanics involved in shipping technicalities.</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Tech. in Marine Engineering</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Entrance test + Group Discussion + Interview</td></tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Passed 10+2 with Physics, Chemistry  and Mathematics</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 4,00,000 - INR 14,00,000</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">INR 3,00,000 - 10,00,000</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Grade IV Marine Engineer (Junior Cadre), Merchant Naval Cadre, National and International Naval Logistics and Shipments, Naval Management Faculty, Lecturer etc.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="b" ><h1 style="margin-top:20px;">B.Tech. in Naval Architecture and Ocean Engineering</h1></div><br>
+                        <div style="text-indent:100px">B. Tech in Naval Architecture & Ocean Engineering. This is the basic engineering degree programme orienting the students for design and construction of marine crafts and structures. Admission is done through CET.</div>
+                      
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Tech. in Naval Architecture and Ocean Engineering</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Based on counseling after clearing Entrance Tests (JEE Main, AIEEE, AICET and IMU CET) for different colleges</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">	
+                                            10+2 with science subjects</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 1.5 Lakh p.a.</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">	
+                                            INR 1.8 to 2 Lakh p.a.</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Port Manager, Chief Marine Engineer, Technical Superintendent, Marine Surveyor, Ship Operator and Second Marine Engineer</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div id="c" ><h1 style="margin-top:20px;">B.Sc. in Ship Building and Repair</h1></div><br>
+                    <div style="text-indent:100px">Shipbuilders, also called shipwrights, follow a specialized occupation that traces its roots to before recorded history. Shipbuilding and ship repairs, both commercial and military, are referred to as "naval engineering".</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Sc. in Ship Building and Repair</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Entrance Exam and Merit Based</td></tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">Upto Rs. 1 Lakh</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">5,00,000 - 9,00,000 P/A</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Service and Manufacturing</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="d" ><h1 style="margin-top:20px;">B.Sc. in Marine Biology</h1></div><br>
+                        <div style="text-indent:100px">The Bachelor of Science in Marine Biology is a four-year program that provides students a clear and deep understanding and knowledge of marine life and its ecosystem. The course discusses the concepts and theories of modern biological sciences, physical, and biological basis of aquatic life.</div>
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Sc. in Marine Biology</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th or equivalent</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">Upto Rs. 1 Lakh</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 5,00,000 P/A</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Horticulturist,natural resource technician,marine research technician,marine conservation coordinator,wildlife biologist,marine biologist,environmental consultaant</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="e" ><h1 style="margin-top:20px;">B.Sc. in Oceanography</h1></div><br>
+                            <div style="text-indent:50px;">The scope of oceanography in India offers diverse career opportunities. Graduates in oceanography can work as research scientists, marine biologists, oceanographers, coastal zone managers, environmental consultants, and educators.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">BSc. in Oceanography</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Merit based</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Merit based</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 4,00,000 TO INR 6,00,000</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">3,00,000 - 6,00,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Marine biologist.
+                                                    Marine technician.Assistant professor in oceanography.Marine researcherMarine chemist.Marine engineer.Ecologist.Marine geologist.</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            <div id="f" ><h1 style="margin-top:20px;">Electro Technical Officer (ETO) Course:</h1></div><br>
+                            <div style="text-indent:100px">Paramedical courses present ample employment opportunities because of the expansion of the healthcare industry.
+
+                                On merchant navy ships there are many electrical electronics and automation systems senior rank engineer officer is required to live after the maintenance and the health of is technical systems officer on ship looks after election electronics and automation is called electro technical officer
+
+As the electronic system and automation is increasing on merchant navy ships, the job of Electro technical officer demands very high skills.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">ETO</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2th equivalent</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 3,0,000 TO INR 6,00,000</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 3,50,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Maintenance of Electrical Generators.
+                                                    Maintenance of Power Distribution System.
+                                                    Maintenance of Electrical Motors & Machineries.
+                                                    Maintenance and Operation of electronics system.
+                                                    Maintenance and Operation of ship’s communication system.
+                                                    </td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="g" ><h1 style="margin-top:20px;">MBA in Shipping and Port Management</h1></div><br>
+                                <div style="text-indent:100px">What is the scope of MBA in port and shipping management?
+                                    Professionals with an MBA in Port and Shipping Management can explore a multitude of career opportunities in diverse organizations including Shipping companies, logistics companies, supply chain management firms and ports along with Consultation agencies (logistics, supply chain management & liner trade) amongst others ...</div>
+                                    <div class="table-container">
+                                        <table>
+                                            <tbody>
+                                                <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">MBA in Shipping and Port Management</td></tr>
+                                                <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">2 Years</td></tr>
+                                                <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Entrance/ Merit-Based</td></tr>
+                                                <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Bachelor’s degree in relevant discipline from a recognized university with an aggregate of at least 50% marks. </td></tr>
+                                                <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 80,000 to 6,00,000</td></tr>
+                                                <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">	INR 5,00,000 to 8,00,000</td></tr>
+                                                    <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Port Manager, Ports Operation Officer, Shipping Manager and Senior Shipping Officer, Cargo Operation Manager, Cruise Ship Manager.</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                        </section> 
+                       <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="roadmap.html" class="footer__link">Roadmap</a></li>
+                        <li><a href="coursemain.html" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

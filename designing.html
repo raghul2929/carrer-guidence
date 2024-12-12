@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive landing page</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <style>
+            table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+                border: px solid rgb(224, 35, 35);
+                width: 70%;
+                justify-content: center;
+                border-radius: 20px;
+              
+             border-radius: 10px; /* Adjust the border radius as needed */
+                overflow: hidden;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+              /* This centers the table vertically on the page */
+            }
+           
+            .data {
+                padding-left: 20px;
+                vertical-align: middle;
+              
+               font-weight: strong;
+            }
+            .value {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                width: 50%;
+                height: 4em;
+                border: 1px solid #ccc;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="deesign.html" class="nav__link active-link">Back to Design</a></li>
+                        <li class="nav__item"><a href="#decoration" class="nav__link">Path</a></li>
+            
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+              <!--========== DECORATION ==========-->
+             
+       
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title"> Designing Courses after 12th in India</h2>
+                <div style="text-align: center;" class="Designing">
+                    <img src="assets/img/desinn.png" alt="" width="600px">
+                </div><section class="decoration section bd-container" id="decoration">
+                    <h2 class="section-title"> Undergraduate courses<br> For Your Carrer</h2>
+                    <div class="decoration__container bd-grid">
+                    <div id="a">
+                        <div class="decoration__data">
+                            <img src="assets/img/fashion.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Fashion Designing</h3>
+                            <a href="#ag" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div id="b">
+                        <div class="decoration__data">
+                            <img src="assets/img/grapic.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Graphic Designing</h3>
+                            <a href="#po" class="button button-link">Explore</a>
+                        </div>
+                    </div>  
+                     
+                        <div class="decoration__data">
+                            <img src="assets/img/anmat.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title"> Animation Film Designing</h3>
+                            <a href="#hi" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="decoration__container bd-grid">
+                        <div class="decoration__data">
+                            <img src="assets/img/leather.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Leather Designing</h3>
+                            <a href="#he" class="button button-link">Explore</a>
+                        </div>
+    
+                        <div class="decoration__data">
+                            <img src="assets/img/cleaning service-amico.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Interior Designing</h3>
+                            <a href="#lo" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/Product quality-amico.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Design in Product Designing</h3>
+                            <a href="#in" class="button button-link">Explore</a>
+                        </div>
+                        <div class="decoration__data">
+                            <img src="assets/img/textile.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Textile Designing                      </h3>
+                            <a href="#so" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                   
+                </section>
+                 <div style="text-indent:100px">Designing a course involves several essential steps to ensure effective learning. Start by setting clear learning objectives that define what students should achieve. Identify your target audience's characteristics and preferences. Choose the course format, whether online, in-person, or hybrid, and structure the content logically into modules. Create engaging content like lectures, activities, and assessments that align with the objectives. Employ various teaching methods like discussions and projects, and select appropriate technology if needed. Promote active learning through interactive elements. Develop a comprehensive syllabus outlining the schedule, assessments, and policies. Pilot the course, gather feedback, and make revisions as necessary. Establish communication channels and support systems for students.  </div>
+                 <br>
+                                
+              
+            
+                <div class="course"><h1 style="margin-top:100px;">Designing Courses After 12th Highlights</h1></div>
+           <div class="table-container">
+                <table class="table">
+                    <tbody>
+                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">Designing Course</td></tr>
+                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">10 Months to 4 Years</td></tr>
+                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 45% marks</td></tr>
+                        <tr><td class="data"><h4><strong>Offer BY</strong></h4></td><td class="value">Designing institute</td></tr>
+                        <tr><td class="data"><h4><strong>Fees Structure</strong></h4></td><TD class="value">INR 15,000 - INR 45,000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div ><h1 style="margin-top:20px;">Why Designing  course ?</h1></div><br>
+                <div style="text-indent:100px">Design degrees allow you to discover everything related to creativity and innovation, from expressing ideas to providing answers to the needs or challenges of society, as well as transmitting messages through an image that can be projected through each of our designs or graphic pieces.</div>
+                    <div ><h1 style="margin-top:20px;">Top Designing Degree Courses</h1></div><br>
+                    <div style="text-align: center;" class="medical">
+                        <img src="" alt="" width="600px">
+                    </div><br>
+                    <div id="ag">
+                       <div ><h1 style="margin-top:20px;">B. Des. /B.Sc. in Fashion Designing:</h1></div><br>
+                    <div style="text-indent:100px">Fashion Designing is one of the most popular design courses among Indian students. This course can be completed in a variety of specializations after 12th such as textile technology, decoration, clothing design and manufacturing, fashion marketing, etc. Graduates of fashion design can work in various fields such as fashion designers, fashion consultants, tailors, fashion retailers, fashion event organizers, etc. The field is divided into two courses namely Bachelor of Fashion Design, and B.Sc. in Fashion Designing i.e., BFT (Bachelor of Fashion Technology). In addition to Bachelor’s Degree courses, students can do diploma certificate courses in fashion design.</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">Bsc.Fashion designing</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 to 4 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Qualifying 10+2 exams with 50% aggregate to be eligible to sit for exams like NIFT, UCEED, CEED, NID DAT, etc</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">For Diploma & Certification - INR 50,000 - INR 3,00,000
+
+                                        For UD/PG degree - INR 3,00,000 - INR 6,00,000</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">	INR 2 - 3 lakhs per annum for a fresher</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Fashion Designer, Stylist, Fashion Show Organizers, Marketers, etc.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="po">
+                        <div ><h1 style="margin-top:20px;">B. Des. /B.Sc. in Graphic Designing:</h1></div><br>
+                        <div style="text-indent:100px">Graphic Designing is one of the most recognizable forms of communication that uses bright colors, attractive images, typography, symbols, and space to convey messages. These graphic arts can be seen in newspapers, magazines, logos, websites, billboards, collections, etc. Students who want to pursue a career in graphic design in other IT industries can pursue Bachelor of Design in Graphic Design, BA and B. Sc. in Graphic Designing and other diploma courses that are available in this field.</div>
+                      
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B. Des. /B.Sc. in Graphic Designing</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value"> Merit-based and Entrance-based</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Candidates should have passed the 12th standard with 50% aggregate marks or more in the Arts/Commerce/Science stream</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">	3 Lakh - 10 Lakh</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2 Lakh - 8 Lakh</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">visual designer, web designer, video and film editor, photo editor, graphic designer, computer graphics designer, Communications Designer, Interaction Designer, and Service designer</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hi">
+                        <div ><h1 style="margin-top:20px;">B. Des. in Animation Film Designing</h1></div><br>
+                    <div style="text-indent:100px">Animation Film Design courses are related to Animation and Multimedia which includes 2D Animation, 3D Animation, Clay modeling, Graphic Narratives, Mixed Media, etc. The training offered in this field enables students to master the art of animation, graphic design, and digital filmmaking. Some of the most popular courses are Bachelor of Design- Animation Film Design, BA in Animation, B.Sc. in Animation, Diploma in Animation, etc.</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B. Des. in Animation Film Designing</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value"></td>CUDAT</tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Qualifying 10+2 exams with 50% aggregate to be eligible to sit for exams like NIFT, UCEED, CEED, NID DAT, etc</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 50,000 TO INR 12,00,000</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">	INR 2 - 3 lakhs per annum for a fresher</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Fashion Designer, Stylist, Fashion Show Organizers, Marketers, etc.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="he">
+                        <div ><h1 style="margin-top:20px;">B. Des. in Leather Designing</h1></div><br>
+                        <div style="text-indent:100px">The demand for leather goods is increasing. Various bachelor’s degree courses in leather design include Bachelor of Design- Leather Designing, B.Sc. in Leather Designing, and Bachelor of Design- Fashion Supplements Leather Design. Similarly, fashion design, diploma courses, and certifications are also popular in leather design.</div>
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B. Des. in Leather Designing</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 50% aggregate in PCM/B</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 40,000 TO INR 1,00,000</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 5,00,000 P/A</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">	INR 2 - 3 lakhs per annum for a fresher</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="lo">
+                            <div ><h1 style="margin-top:20px;">B.Sc. in Interior Designing</h1></div><br>
+                            <div style="text-indent :50px;">Interior design is a much sought-after filed today that combines the design and decoration of interior (and usually exterior) or room or building keeping in mind the space and availability of resources provided to them. The various domains of Interior designing include interior design, furniture design, landscape design, set design, and product design. Some popular undergraduate courses in Interior Designing include- Bachelor of Design- Interior Designing and B.Sc. in Interior Designing.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Sc. in Interior Designing</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">	3 years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Merit and/or Entrance Based</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">	10+2 with 50% marks</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">		INR 3- 10 LPA</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">3,00,000 - 6,00,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Interior Designer, Furniture Designer, Visual Merchandiser, Exhibition Designer</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="in">
+                            <div ><h1 style="margin-top:20px;">Bachelor of Design in Product Designing:</h1></div><br>
+                            <div style="text-indent:100px">Product design is a field that focuses on the design of existing products and the development of new products that serve different purposes. Product designers can add minor tweaks to design and layout to increase overall usability and productivity. Bachelor of Design – Product Designing is a very common design course among students. While other designing courses after 12th are B.Sc. Product Design and Design Engineering. Diploma and certificate courses are also available for product designing.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">Bachelor of Design in Product Designing</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">Class 12th in any stream</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 30,000 TO INR 4,00,000</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 3,50,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Lead product designer, Product Manager,Product Engineer etc</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="so">
+                                <div ><h1 style="margin-top:20px;">Bachelor of Design in Textile Designing</h1></div><br>
+                                <div style="text-indent:100px">Textile technology is one of the largest industries in India and greatly influences the growth of the fashion industry. Textile design course addresses topics such as textile technology, design skills, marketing skills, CAD, printing, etc. Bachelor of Design in Textile Designing covers courses such as B.Sc. in Textile Design, Textile Engineering, Diploma in Textile Engineering, Diploma in Textile Designing, and a few certificate courses.</div>
+                                    <div class="table-container">
+                                        <table>
+                                            <tbody>
+                                                <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">Bachelor of Design in Textile Designing</td></tr>
+                                                <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value"2 Years</td></tr>
+                                                <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">Common Entrance Examination for Design, National Council for Interior Design exam, National-level Entrance Aptitude Test (NLAT), NID entrance test, NIFT entrance exam.</td></tr>
+                                                <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2 from a recognized board (any stream)</td></tr>
+                                                <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 1,00,000 TO INR 5,00,000</td></tr>
+                                                <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">5,00,000 - 7,00,000 P/A</td></tr>
+                                                    <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Textile Designer, Fabric Resource Manager, Fabric Analyser, among others such.r</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                        
+             
+            </section> 
+                       <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Roadmap</a></li>
+                        <li><a href="#" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="roadmap .html" class="footer__link">Roadmap</a></li>
+                        <li><a href="coursemain.html" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

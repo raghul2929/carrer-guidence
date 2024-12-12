@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>APP DEVELOPMENT</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="coursemain.html" class="nav__link active-link">Back to Course</a></li>
+        
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/Product teardown-pana.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">App devolopment courses</h1>
+                        <p class="home__description"> “The rich and interactive experiences we have come to expect on mobile apps have created new standards and expectations for all digital media including the web. The result is websites are evolving to become more app-like in their rich functionality.”</p>
+                        <a href="#decoration"" class="button">Lets learn</a>
+                    </div>   
+                </div>
+            </section>
+
+
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">Android</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img  src="https://img.icons8.com/fluency/48/flutter.png" alt="flutter"/>
+                        <h3 class="decoration__title">Flutter</h3>
+                        <a href="https://www.udemy.com/course/learn-flutter-beginners-course/" class="button button-link">Explore</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img  src="https://img.icons8.com/nolan/64/react-native.png" alt="react-native"/>
+                        <h3 class="decoration__title">React Native</h3>
+                        <a href="https://www.udemy.com/course/react-native-tutorial/" class="button button-link">Explore</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="https://img.icons8.com/color/48/xamarin.png" alt="xamarin"/>
+                        <h3 class="decoration__title">Xamarin</h3>
+                        <a href="https://www.udemy.com/topic/xamarin/"class="button button-link">Explore</a>
+                    </div>
+                    <div class="decoration__data">
+                        <img src="https://img.icons8.com/badges/48/cordova.png" alt="cordova"/>
+                        <h3 class="decoration__title">Cordova</h3>
+                        <a href="https://www.udemy.com/course/learn-to-build-your-first-apache-cordova-app/"class="button button-link">Explore</a>
+                    </div>
+                    <div class="decoration__data">
+                        <img  src="https://img.icons8.com/color/48/kotlin.png" alt="kotlin"/>
+                        <h3 class="decoration__title">Kotliin</h3>
+                        <a href="https://www.udemy.com/topic/kotlin/"class="button button-link">Explore</a>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title">Mac</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img  src="https://img.icons8.com/papercut/60/swift.png" alt="swift"/>
+                        <h3 class="decoration__title">Swift</h3>
+                        <a href="https://www.udemy.com/topic/swift/" class="button button-link">Explore</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img  src="https://img.icons8.com/nolan/64/react-native.png" alt="react-native"/>
+                        <h3 class="decoration__title">React Native</h3>
+                        <a href="https://www.udemy.com/course/react-native-tutorial/" class="button button-link">Explore</a>
+                    </div>
+                </div>
+                           <!--========== courasel slider ==========-->
+                           <section class="carousel">
+                            <h2 class="categories__title">Top youtubes to learn</h2>
+                            <div class="carousel__container">
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/CHIRIS.jpeg"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                 <a href="https://www.youtube.com/@CodeWithChris"><h5 class="carousel-item__details--title">CODEWITHCHRIS</h5></a> 
+                                  
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/philip lackner.jpeg"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                  <a href="https://www.youtube.com/@PhilippLackner"><h5 class="carousel-item__details--title">PHILIP LACKNER</h5></a>
+                                  
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/DB.png"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                  <a href="https://www.youtube.com/@dbestech"><h5 class="carousel-item__details--title">DBESTECH</h5></a>
+                                  
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/FREECODE.jpg"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                  <a href="https://www.youtube.com/@freecodecamp"><h5 class="carousel-item__details--title">FREECODECAMP</h5></a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/LETSBUILD.jpg"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                  <a href="https://www.youtube.com/@CodeWithChris"><h5 class="carousel-item__details--title">LETS BUILD THAT APP</h5></a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  class="carousel-item__img"
+                                  src="assets/img/NET NINJA.jpg"
+                                  alt="people"
+                                />
+                                <div class="carousel-item__details">
+                                  <div class="controls">
+                                    <span class="fas fa-play-circle"></span>
+                                    <span class="fas fa-plus-circle"></span>
+                                  </div>
+                                  <a href="https://www.youtube.com/@NetNinja"><h5 class="carousel-item__details--title">THE NET NNJA</h5></a>
+                                </div>
+                              </div>
+                      
+                             
+                            </div>
+                          </section>
+        
+
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                      <li><a href="roadmap .html" class="footer__link">Roadmap</a></li>
+                      <li><a href="coursemain.html" class="footer__link">Courses</a></li>
+                      <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>

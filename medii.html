@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive landing page</title>
+        <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <style>
+            table {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                border-collapse: collapse;
+                border: px solid rgb(224, 35, 35);
+                width: 70%;
+                justify-content: center;
+                border-radius: 20px;
+              
+             border-radius: 10px; /* Adjust the border radius as needed */
+                overflow: hidden;
+            }
+            .table-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 border-radius: ;
+              /* This centers the table vertically on the page */
+            }
+           
+            .data {
+                padding-left: 20px;
+                vertical-align: middle;
+              
+               font-weight: strong;
+            }
+            .value {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            td {
+                width: 50%;
+                height: 4em;
+                border: 1px solid #ccc;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo2.png" alt="Logo" >
+                    <!-- <span class="logo-text">LevelUp</span> -->
+                 </a>
+                  
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="med1.html" class="nav__link active-link">Back to medical</a></li>
+                        <li class="nav__item"><a href="#med" class="nav__link">Path</a></li>
+         
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+       
+            <!--========== DECORATION ==========-->
+            <section class="decoration section bd-container" id="decoration">
+                <h2 class="section-title"> Medical Courses after 12th in India</h2>
+                <div style="text-align: center;" class="medical">
+                    <img src="assets/img/meddd.png" alt="" width="600px">
+                </div><section  class="decoration section bd-container" id="decoration">
+                    <h2 class="section-title"> undergraduate courses<br> For Your Carrer</h2>
+                    <div  class="decoration__container bd-grid">
+                    <div id="a">
+                        <div class="decoration__data">
+                            <img src="assets/img/meddd.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Medical</h3>
+                            <a href="#med" class="button button-link">Explore</a>
+                        </div>
+                    </div>
+                    <div id="b">
+                        <div class="decoration__data">
+                            <img src="assets/img/nurse.png" alt="" class="decoration__img">
+                            <h3 class="decoration__title">Paramedical</h3>
+                            <a href="paramedical.html" class="button button-link">Explore</a>
+                        </div>
+                    </div>  
+                  
+                   
+                </section>
+                 <div style="text-indent:100px"><b>Top Medical Courses After 12th:</b> There are loads of medical courses that one can find after passing the 12th examination. The medical courses after 12th grade are normally developed for a duration of three to four years. But, we may also find courses like MBBS that are being taught for a longer duration (5.5 years) than the estimated undergraduate medical programs after 12th grade.
+
+                Medical Courses after 12th grade are well developed within medicine, surgery, dentistry, physiotherapy, microbiology, biochemistry, nursing, anesthesiology, pathology, Ayurveda, and numerous other fields of study. The courses are designed to bring together medical theory and practical training concepts.
+                
+                The best programs to study in Medical Courses After 12th are MBBS, BDS, BPT, BAMS, BSc in Microbiology, Diploma in Operation Theatre, BSc in Nursing, BSc in Biochemistry, BUMS, and more. </div>
+                 <br>
+                 
+                <div id="med" class="course"><h1 style="margin-top:100px;">Medical Courses After 12th Highlights</h1></div>
+           <div class="table-container">
+                <table class="table">
+                    <tbody>
+                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">Medical Course</td></tr>
+                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">6 Months to 5.5 Years</td></tr>
+                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 45% marks</td></tr>
+                        <tr><td class="data"><h4><strong>Offer BY</strong></h4></td><td class="value">Medical Institute</td></tr>
+                        <tr><td class="data"><h4><strong>Fees Structure</strong></h4></td><TD class="value">INR 15,000 - INR 45,000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+                <div ><h1 style="margin-top:20px;">Why Medical course ?</h1></div><br>
+                <div style="text-indent:100px">Medical Courses are popular in terms of doctor-certified degrees, and these courses, in simple terms, are known courses that are learned for human health betterment. Degree courses in the medical stream can opt for by the students.
+
+                    There are several reasons why people decide to work in medicine. Due to the high salary range, for some people, it is appealing. It goes without saying that those who work in and dedicate their lives to the medical profession are recognized and regarded as modern-day heroes.</div>
+                    <div ><h1 style="margin-top:20px;">Top Medical Degree Courses</h1></div><br>
+                    <div style="text-align: center;" class="medical">
+                        <img src="assets\img\Top_Medical_Courses.jpg" alt="" width="600px">
+                    </div><br>
+                       <div ><h1 style="margin-top:20px;">Bachelor of Medicine and Bachelor of Surgery (MBBS):</h1></div><br>
+                    <div style="text-indent:100px">MBBS is the core course pursued by students who want to become doctors professionally, during MBBS subjects such as clinical, para clinical and preclinical are studied. This undergraduate program is of 5 years duration and 6 month internship. In order to pursue this course students have to qualify the NEET exam, which is an all India pre-medical entrance examination.,</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">MBBS</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">5 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET</td></tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 50% aggregate in PCM/B</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 8,00,000 TO INR 60,00,000</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">6,00,000 - 15,00,000 P/A</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Doctor, Hospital Administrator, Medical Teacher</td></tr>
+                                        <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Doctor of Medicine (MD), Master of Surgery (MS)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div ><h1 style="margin-top:20px;">Bachelor of Ayurvedic Medicine & Surgery (BAMS) :</h1></div><br>
+                        <div style="text-indent:100px">Bachelor of Ayurvedic Medicine & Surgery (BAMS) is an undergraduate degree program in the field of alternative medicine, specifically Ayurveda. Ayurveda is a traditional system of medicine that originated in India and focuses on holistic healing and natural remedies. BAMS is a comprehensive program that combines the study of ancient Ayurvedic principles, herbal medicine, and therapeutic practices. Graduates of BAMS are trained to diagnose, treat, and prevent various health conditions using Ayurvedic methods and principles, which include herbal formulations, dietary recommendations, and lifestyle adjustments. This degree enables individuals to become Ayurvedic doctors and practitioners, providing healthcare services based on the principles of Ayurveda.</div>
+                      
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">BAMS</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">5.5 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET/KEAM/OJEE</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 50% aggregate in PCM/B</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 1,00,000 TO INR 5,00,000</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">4,00,000 - 12,00,000 P/A</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Physician, Teacher, Manager, Drug manufacturer, Medical Supervisor</td></tr>
+                                            <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Doctor of Medicine (MD), Master of Surgery (MS)</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div ><h1 style="margin-top:20px;">Bachelor of Dental Surgery (BDS)</h1></div><br>
+                    <div style="text-indent:100px">Dental Surgery is one of the respected professions in India, during this course the students are taught about dental problems, denture and dental surgery. BDS course is similar to MBBS in terms of duration, eligibility and Admission process. The BDS course is opted by students who become professional dentists. The Dental Council of India Is the accredited body for all the dental programmes.</div>
+                        <div class="table-container">
+                            <table>
+                                <tbody>
+                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">BDS</td></tr>
+                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">5 Years</td></tr>
+                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET</td></tr>
+                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 50% aggregate in PCM/B</td></tr>
+                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 50,000 TO INR 12,00,000</td></tr>
+                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">5,00,000 - 9,00,000 P/A</td></tr>
+                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Private Practitioner, Dental Hygienist, Dental Assistant</td></tr>
+                                        <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Masters in Dental Surgery</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div ><h1 style="margin-top:20px;">Bachelors in Pharmacy</h1></div><br>
+                        <div style="text-indent:100px">The most common medical course opted by a lot of students is B. Pharma. This course is well suited for students looking for careers related to various medicines, drug testing, medicine dosage, etc. These individuals go on to become pharmacists after the completion of this course. B.Pharma can be pursued by students right after class 12th and it does not require a medical entrance exam such as NEET for the admission, although few colleges might have their own entrance examinations for the admission process.</div>
+                            <div class="table-container">
+                                <table>
+                                    <tbody>
+                                        <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Pharm</td></tr>
+                                        <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                        <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                        <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th Pass with 50% aggregate in PCM/B</td></tr>
+                                        <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 40,000 TO INR 1,00,000</td></tr>
+                                        <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 5,00,000 P/A</td></tr>
+                                            <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Pharmacist, Drug inspector, wholesaler, Quality Assurance Associate, Chemical Technician</td></tr>
+                                            <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">M.Pharma, MBA, PG Diploma</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div ><h1 style="margin-top:20px;">B.Sc Nursing</h1></div><br>
+                            <div style="text-indent: 50px;">B.Sc. Nursing is a professional undergraduate degree program in India that equips students with the knowledge and practical skills required to provide nursing care in various healthcare settings. Graduates of this program, upon successful completion and licensing, work as registered nurses, contributing to patient care and healthcare services across the country. B.Sc. Nursing programs in India typically cover a wide range of healthcare subjects, including medical-surgical nursing, obstetrics and gynecology nursing, pediatric nursing, psychiatric nursing, and community health nursing.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.SC Nursing</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET/DSAT/ITM NEST</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2 with PCB and English as mandatory subjects, minimum 45% aggregate</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 4,00,000 TO INR 6,00,000</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">3,00,000 - 6,00,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Chief Nursing Officer,Critical Care Nurse,Nurse Educator,Clinical Nurse Manager</td></tr>
+                                                <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Masters of Physical Therapy (MPT)</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            <div ><h1 style="margin-top:20px;">Bachelors of Vocational Training (OTT):</h1></div><br>
+                            <div style="text-indent:100px">Paramedical courses present ample employment opportunities because of the expansion of the healthcare industry.
+
+                                Paramedical courses are job-oriented skilling programs that transform an individual learner into a competent healthcare worker. Paramedical courses give rise to allied healthcare professionals who deliver direct patient care, rehabilitation, treatment, diagnostics, and health improvement interventions to restore minimal optimal functions in an individual.
+                                
+                                B.Voc in OTT is a 3 year duration program that includes internship in it’s course duration to get hands-on training experience in top hospitals. Operation Theatre Technology or OTT is a course that includes managing and handling the operation theatre, from sterilization of the equipment to handing over the equipment to the doctor during the surgery and preparation of the patient all is included in the course.</div>
+                                <div class="table-container">
+                                    <table>
+                                        <tbody>
+                                            <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Voc</td></tr>
+                                            <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                            <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                            <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2 from a recognized board (any stream)</td></tr>
+                                            <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 30,000 TO INR 4,00,000</td></tr>
+                                            <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,00,000 - 3,50,000 P/A</td></tr>
+                                                <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Operation theatre technician</td></tr>
+                                                <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">M.Voc, M.Sc</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div ><h1 style="margin-top:20px;">Bachelor of Physiotherapy (BPT)</h1></div><br>
+                                <div style="text-indent:100px">Physiotherapy is a treatment option used to maintain the mobility of the patient’s body, thus after completing this course, the candidate is eligible to perform various physiotherapeutic exercises on patients that have gone through trauma or have physical disabilities that need to be attended to. The course helps the students learn how to improve mobility dysfunction of the back, spine, shoulder and neck.</div>
+                                    <div class="table-container">
+                                        <table>
+                                            <tbody>
+                                                <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">BPT</td></tr>
+                                                <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">3 Years</td></tr>
+                                                <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">CET/Merit based</td></tr>
+                                                <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">10+2 from a recognized board (any stream)</td></tr>
+                                                <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 1,00,000 TO INR 5,00,000</td></tr>
+                                                <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">5,00,000 - 7,00,000 P/A</td></tr>
+                                                    <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Physiotherapist, Researcher, Osteopath, Therapy Manager, Sports Physio Rehabilitator</td></tr>
+                                                    <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Masters of Physical Therapy (MPT)</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div ><h1 style="margin-top:20px;"> Bachelor of Veterinary Sciences & Animal Husbandry (B.V.Sc. & AH)</h1></div><br>
+                                <div style="text-indent:100px">Veterinary Sciences and Animal Husbandry as a domain that focuses majorly on animals, their health and livestock production, etc. B.Vsc as a course focuses on providing training that includes animal anatomy and physiology. After the completion of the course, the candidate can go on to become a Veterinary Physician, Animal Research Scientist, Livestock Development Officer or Lecturer.</div>
+                                    <div class="table-container">
+                                        <table>
+                                            <tbody>
+                                                <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.V.sc and A.H</td></tr>
+                                                <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">5.5 Years</td></tr>
+                                                <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET</td></tr>
+                                                <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th boards with 50% aggregate in PCM/B</td></tr>
+                                                <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 1,00,000 TO INR 2,00,000</td></tr>
+                                                <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">4,00,000 - 6,00,000 P/A</td></tr>
+                                                    <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Veterinary Physician, Animal Research Scientist, Livestock Development Officer or Lecturer</td></tr>
+                                                    <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">M.V.Sc
+
+                                                    </td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div ><h1 style="margin-top:20px;"> Bachelor of Optometry (B.Optom)</h1></div><br>
+                                    <div style="text-indent:100px">Optometry is the field that deals with ailments related to the eye – which includes, eye treatments, vision correction, eye examination, treatment and diagnosis of various eye related problems. Bachelors in Optometry is a 3 year program that can be pursued and then the person is eligible for treating patients as an Optometrist. The course is of 4 years duration and it also includes 6 months to 1 year of mandatory internship.</div>
+                                        <div class="table-container">
+                                            <table>
+                                                <tbody>
+                                                    <tr><td class="data"><h4><strong>Course Name</strong></h4></td><td class="value">B.Optom</td></tr>
+                                                    <tr><td class="data"><h4><strong>Duration</strong></h4></td><td class="value">4 Years</td></tr>
+                                                    <tr><td class="data"><h4><strong>Admission Mode</strong></h4></td><td class="value">NEET/Merit Based</td></tr>
+                                                    <tr><td class="data"><h4><strong>Eligibility</strong></h4></td><td class="value">12th boards with 50% aggregate in PCM/B</td></tr>
+                                                    <tr><td class="data"><h4><strong>Average course fees</strong></h4></td><td class="value">INR 2,00,000 TO INR 3,00,000</td></tr>
+                                                    <tr><td class="data"><h4><strong>Average Salary</strong></h4></td><TD class="value">2,50,000 - 3,50,000 P/A</td></tr>
+                                                        <tr><td class="data"><h4><strong>Job profiles</strong></h4></td><td class="value">Eye Doctor, Optometrist,Teacher, Optician</td></tr>
+                                                        <tr><td class="data"><h4><strong>Higher Education</strong></h4></td><TD class="value">Doctor of Medicine (MD), Master of Surgery (MS)</td></tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        
+                
+                
+            </section> 
+                       <!-- Add this section to your HTML after the existing sections -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Level Up</a>
+                    </h3>
+                    <p class="footer__description">Doorstep for your carrer</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Roadmap</a></li>
+                        <li><a href="#" class="footer__link">Courses</a></li>
+                        <li><a href="#" class="footer__link">Job Alerts</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Company</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">About us</a></li>
+                        <li><a href="#" class="footer__link">Our mision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 jerry. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+      
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+ 
+<script>
+    const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+    
+});
+</script>
+    </body>
+</html>
